@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #104F55;
+}
+
+form{
+    background-color: white;
+    max-width: 430px;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 45px 0 80px 0;
+    color: #32746D;
+    font-weight: lighter;
+}
+
+form input[type=text], form input[type=password] {
+    width: 55%;
+    height: 45px;
+    border: 1px solid #0000007b;
+    margin: 10px 0;
+    margin-left: 23%;   
+    font-weight: bold;
+    padding-left: 5px;
+    border-radius: 15px;
+    outline: 0;
+    transition: 0.5s;
+}
+
+form input[type=submit] {
+    width: 35%;
+    height: 40px;
+    margin: 20px 0 0 33%;
+    border-radius: 15px;
+    background-color: #32746D;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.482);;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+}
+
+form input[type=submit]:hover {
+    background-color: #315e59;
+}
+
+.esqueceu-senha {
+    font-size: 14px;
+    text-align: center;
+    margin: 8px 0;
+    font-weight: lighter;
+}
+
+a {
+    color: black;
+}
+
+.link-registrar {
+    font-size: 14px;
+    margin-top: 60px;
+    padding: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 700px) {
+
+    form {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    form {
+        width: 300px;
+    }
+}
